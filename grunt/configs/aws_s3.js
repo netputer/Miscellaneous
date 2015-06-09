@@ -20,7 +20,7 @@ module.exports = function (grunt) {
                 bucket: 'web-statics-staging',
                 differential: true,
                 params: {
-                    CacheControl: '31536000',
+                    CacheControl: 'max-age=43200',
                     Expires: expireDate
                 }
             },
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
                 bucket: 'web-statics-production',
                 differential: true,
                 params: {
-                    CacheControl: '31536000',
+                    CacheControl: 'max-age=43200',
                     Expires: expireDate
                 }
             },
