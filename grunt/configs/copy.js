@@ -7,7 +7,8 @@ module.exports = function (grunt) {
                 cwd: '<%= paths.app %>',
                 dest: '<%= paths.dist %>',
                 src: [
-                    '**/*.js'
+                    '**/*.js',
+                    '**/*.png'
                 ]
             }]
         }
